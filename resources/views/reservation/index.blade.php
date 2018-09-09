@@ -358,6 +358,8 @@
 	
 @endsection
 
+@extends('modals.reservation')
+
 @section('scripts')
 	
 @endsection

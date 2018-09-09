@@ -199,6 +199,12 @@ h3 {
     padding-bottom:10px;
 }
 
+/* modal */
+
+.modal-dialog {
+    max-width:90% !important;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
