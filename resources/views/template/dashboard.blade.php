@@ -43,22 +43,57 @@
 
 	            	<h5 class="title">GENERAL</h5>
 	                <ul class="list-unstyled sidelinks">
-	                	<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-	                	<li><a href="#"><i class="fa fa-edit"></i> Reservation</a></li>
-	                	<li><a href="#"><i class="fa fa-file-alt"></i> Sales Invoice</a></li>
-	                	<li><a href="#"><i class="fa fa-credit-card"></i> Payment</a></li>
-	                	<li><a href="#"><i class="fa fa-users"></i> Customers</a></li>
-	                	<li><a href="#"><i class="fa fa-chart-bar"></i> Rates</a></li>
-	                	<li><a href="#"><i class="fa fa-file-contract"></i> Master Records</a></li>
-	                	<li><a href="#"><i class="fa fa-copy"></i> Reports</a></li>
+	                	<li>
+	                		<a href="{{ URL::to('/') }}">
+	                			<i class="fa fa-home"></i> Home
+	                		</a>
+	                	</li>
+	                	<li>
+	                		<a href="{{ URL::to('reservation') }}">
+	                			<i class="fa fa-edit"></i> Reservation
+	                		</a>
+	                	</li>
+	                	<li>
+	                		<a href="{{ URL::to('sales-invoice') }}">
+	                			<i class="fa fa-file-alt"></i> Sales Invoice
+	                		</a>
+	                	</li>
+	                	<li>
+	                		<a href="{{ URL::to('payment') }}">
+	                			<i class="fa fa-credit-card"></i> Payment
+	                		</a>
+	                	</li>
+	                	<li>
+	                		<a href="{{ URL::to('customers') }}">
+	                			<i class="fa fa-users"></i> Customers
+	                		</a>
+	                	</li>
+	                	<li>
+	                		<a href="{{ URL::to('rates') }}">
+	                			<i class="fa fa-chart-bar"></i> Rates
+	                		</a>
+	                	</li>
+	                	<li>
+	                		<a href="{{ URL::to('master-records') }}">
+	                			<i class="fa fa-file-contract"></i> Master Records
+	                		</a>
+	                	</li>
+	                	<li>
+	                		<a href="{{ URL::to('reports') }}">
+	                			<i class="fa fa-copy"></i> Reports
+	                		</a>
+	                	</li>
 	                </ul>
 	            </div>
 	        </div>
-	        <div class="col" id="main">
-	        @include('template.header')		
-	           @yield('content')
+	        <div class="col-md-10 pl-0 pr-0" id="main">
+		        @include('template.header')		
 
-	        @include('template.footer')
+		        <div class="pl-3 pr-3">
+		           @yield('content')
+		         </div>
+
+		        @include('template.footer')
 	        </div>
 	    </div>
 	
@@ -70,9 +105,9 @@
 	<script src="{{ asset('js/jquery-3.2.1.slim.min.js') }}"></script>
 	<script src="{{ asset('js/popper.min.js') }}"></script>
 	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('js/fullcalendar.min.js') }}"></script>
 	<script src="{{ asset('js/jquery.min.js') }}"></script>
 	<script src="{{ asset('js/jquery-ui.min.js') }}"></script>
 	<script src="{{ asset('js/moment.min.js') }}"></script>
+	<script src="{{ asset('js/fullcalendar.min.js') }}"></script>
 </body>
 </html>

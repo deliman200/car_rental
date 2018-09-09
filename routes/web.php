@@ -12,5 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('static_page.index');
+    return view('home.index');
+});
+
+Route::get('reservation', function () {
+    return view('reservation.index');
+});
+
+Route::get('sales-invoice', function () {
+    return view('sales_invoice.index');
+});
+
+Route::get('payment', function () {
+    return view('payment.index');
+});
+
+Route::get('customers', function () {
+    return view('customers.index');
+});
+
+Route::get('rates', function () {
+    return view('rates.index');
+});
+
+Route::get('master-records', function () {
+    return view('master_records.index');
+});
+
+Route::get('reports', function () {
+    return view('reports.index');
 });

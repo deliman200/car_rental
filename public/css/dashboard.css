@@ -45,6 +45,7 @@ header ul li a span.numNotif {
     margin-top:15px;
 }
 
+
 /*sidebar*/
 
 #sticky-sidebar {
@@ -116,4 +117,34 @@ footer{
     position:fixed;
     bottom:8px;
     right:0;
+}
+
+
+/* Reservation */
+.custDetails {
+    padding:10px 0;
+}
+.custDetails h3, .vehicleDetails h3, .reservDetails h3{
+    font-size:18px;
+    font-weight:bold;
+    padding-bottom:10px;
+}
+
+.custDetails button, .vehicleDetails button, .reservDetails button {
+    width:65%;
+}
+
+
+.vehicleDetails {
+    margin-top:20px;
+}
+
+
+/* reports */
+.reportsTable table th {
+    font-size:13px !important;
+}
+
+.reportsTable table tr td {
+    font-size:13px !important; 
 }

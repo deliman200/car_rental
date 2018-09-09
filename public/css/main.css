@@ -178,6 +178,11 @@ textarea {
     clear: both;
 }
 
+.clearfix {
+    clear:both;
+    overflow: hidden;
+}
+
  .navbar-nav {
   flex-direction: row;
 }
@@ -186,6 +191,12 @@ textarea {
 .ml-auto .dropdown-menu {
   left: auto !important;
   right: 0px;
+}
+
+h3 {
+    font-size:18px;
+    font-weight:bold;
+    padding-bottom:10px;
 }
 
 /* ==========================================================================
@@ -279,4 +290,5 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+
 }
