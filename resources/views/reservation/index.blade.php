@@ -358,7 +358,6 @@
 	
 @endsection
 
-@extends('modals.customer.customerModal')
 
 @section('scripts')
 	
