@@ -173,7 +173,7 @@
 							</div>
 
 							<div class="col-md-7 text-right">
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#selectCustomer"><i class="fas fa-plus"></i> Find Reservation</button>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#selectReservation"><i class="fas fa-plus"></i> Find Reservation</button>
 							</div>
 						</div>
 
@@ -358,7 +358,7 @@
 	
 @endsection
 
-@extends('modals.reservation')
+@extends('modals.customer.customerModal')
 
 @section('scripts')
 	
